@@ -70,6 +70,17 @@ section {
     background: rgba(0, 0, 0, 0.829);
 }
 
+.home::before{
+    z-index: 16;
+    content: '';
+    position: absolute;
+    background: rgba(0, 0, 0, 0.74);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
 .home .content{
     z-index: 19;
     color: white;
@@ -132,6 +143,16 @@ section {
     transform: scale(1.5);
 }
 
+.home video{
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 @media (max-width: 1024px) {
     header {
         padding: 1rem 3rem;      
@@ -169,7 +190,7 @@ section {
         height: 0.5rem;
     }
 
-    header .navigation .navigation-items{
+    header .navigation.active .navigation-items{
         display: flex;
         flex-direction: column;
         align-items: center;
