@@ -153,6 +153,34 @@ section {
     object-fit: cover;
 }
 
+.slider-navigation{
+    display: flex;
+    z-index: 18;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(8rem);
+    margin-bottom: 1.2rem;
+}
+
+.slider-navigation .nav-btn{
+    width: 1.2rem;
+    height: 1.2rem;
+    background: #6699db;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 2rem rgba(59, 44, 201, 0.5);
+}
+
+.slider-navigation .nav-btn:hover{
+    transform: scale(1.5);
+    background: blue;
+}
+
+.slider-navigation .nav-btn:not(:last-child) {
+    margin-right: 3rem;
+}
+
 @media (max-width: 1024px) {
     header {
         padding: 1rem 3rem;      
