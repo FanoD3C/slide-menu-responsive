@@ -1,3 +1,4 @@
+// manejando el DOM
 const btns = document.querySelectorAll(".nav-btn")
 const contentBtn = document.querySelectorAll(".content")
 const slidesBtn = document.querySelectorAll(".video-slide")
@@ -23,7 +24,6 @@ let sliderNav = function(manual){
     slidesBtn[manual].classList.add("active");
     contentBtn[manual].classList.add("active");
 };
-
 
 btns.forEach((btn, i) => {
     btn.addEventListener("click", () => {

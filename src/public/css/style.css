@@ -6,6 +6,7 @@
     
 }
 
+/* truco use rem 16px = 1.6rem */
 html{
     font-size: 62.5%;
 }
@@ -202,6 +203,7 @@ section {
     transition-property: clip-path;
 }
 
+/* responsive */
 @media (max-width: 1024px) {
     header {
         padding: 1rem 3rem;      
