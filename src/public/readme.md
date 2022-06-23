@@ -12,4 +12,24 @@ En la carpeta [[ src/public/video ]] esta vacia porque github no me permite hace
 
         recuerda que tienes que tener bien en claro la ruta a eliminar
 
+-En el momento de hacer un push, tuve un nuevo error que es el siguiente:
+    error: RPC failed; curl 92 HTTP/2 stream 0 was not closed cleanly: CANCEL (err 8)
+
+-Probando "soluciones de stack" que fueron inservibles:
+    Forzando el push:
+    git push -f origin main
+
+    Devolverse de HTTP/2 a HTTP/1.1:
+    devolverse a la version HTTP/1.1 -> git config http.version HTTP/1.1
+    hacer el push del repo -> git push -u origin main
+    volver a la version HTTP/2 -> git config http.version HTTP/2
+
+    Aumentar el buffer:
+    git config  http.postBuffer 157286400
+
+-Solucion al error curl 92 HTTP/2
+    Cambiar la red WiFi:
+    Del 5Ghz a 2.5Ghz
+
+
 Este proyecto no tiene nada de otro mundo es solo una practica en js, html, css
